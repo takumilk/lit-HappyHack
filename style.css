@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 100vh;
+    background-size: cover;
+}
+
+nav{
+    position: absolute;
+    right: 60px;
+    top: 0px;
+}
+
+header ul{
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header li{
+    font-size: 27px;
+    margin: 20px 25px;
+
+}
+
+header ul a{
+    text-decoration: none;
+    color: white;
+    font-family: Futura;
+}
+
+header ul a:hover{
+    color: #3d5cdb;
+
+}
+
+.bg-slider{
+    width: 100vw;
+    background-image: url(images/background1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+header img{
+    width: 150px;
+}
+
+.title{
+    text-align: center;
+    font-family: Futura;
+    font-size: 53px;
+    color: #3d5cdb;
+    padding: 40px;
+}
+
+.intro{
+    /* background-color: #ff9900; */
+}
+.ex1{
+    display: flex;
+    justify-content: center;
+}
+
+.ex1-box{
+    margin: 30px 85px;
+}
+
+.ex1-img{
+    width: 500px;
+    margin: 20px;
+}
+
+.ex1-text{
+    width: 400px;
+    line-height: 200%;
+}
+
+.ex1-btn{
+    text-align: center;
+    margin: 50px;
+}
+
+.ex1-btn a{
+    width: 170px;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: white;
+    background-color: #3d5cdb;
+    font-size: 15pt;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.ex1-btn a:hover{
+    box-shadow: 0px 1px 9px 3px rgb(132, 128, 128);
+}
+
+
+.ex2{
+    display: flex;
+    justify-content: center;
+}
+
+.ex2-box{
+    margin: 20px 85px;
+}
+
+.ex2-img{
+    width: 500px;
+    margin: 20px;
+}
+
+.ex2-text{
+    width: 400px;
+    margin: 15px;
+    line-height: 200%;
+}
+
+.ex2-btn{
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.ex2-btn a{
+    width: 170px;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: white;
+    background-color: #F8BF09;
+    font-size: 15pt;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.ex2-btn a:hover{
+    box-shadow: 0px 1px 9px 3px rgb(132, 128, 128);
+}
+
+
+
+
+
+
+
+
+
+
+.images{
+    background-color: #ffd042;
+    
+}
+
+
+
+.access{
+    text-align: center;
+    margin: 20px;
+    background-color: #8fe53e;
+}
+
+.access iframe{
+    margin: 0 50px;
+}
+
+footer{
+    height: 60px;
+    line-height: 60px;
+    background-color: aqua;
+}
+footer p{
+    text-align: center;
+    color: #3d5cdb;
+    font-family: Futura;
+    font-size: 1rem;
+}
