@@ -5,5 +5,7 @@ $(function($) {
         loop: true
     });
 
+    $(".slide-items").slick();
+
 
 });

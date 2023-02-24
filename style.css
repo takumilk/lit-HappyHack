@@ -58,9 +58,7 @@ header img{
     padding: 40px;
 }
 
-.intro{
-    /* background-color: #ff9900; */
-}
+
 .ex1{
     display: flex;
     justify-content: center;
@@ -148,19 +146,77 @@ header img{
 
 
 
-
-
-.images{
-    background-color: #ffd042;
-    
+.courses{
+    background-color: #D6E6F9;
+    padding-bottom: 50px;
 }
+
+.courses-all{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.course{
+    background-color: #fff;
+    width: 240px;
+    height: 340px;
+    border-radius: 7px;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+}
+
+.course img{
+    padding-top: 30px;
+}
+
+.course-title{
+    position: absolute;
+    bottom: 130px;
+    right: 70px;
+}
+
+.course-btn{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    margin: 15px 5px;
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+}
+
+.course-html{
+    background: #F16529;
+}
+
+
+
+
+.slide-items {
+    width: 40vw;
+
+}
+
+.slide-items img {
+    width: 100%;
+    object-fit: cover;
+}
+
 
 
 
 .access{
     text-align: center;
     margin: 20px;
-    background-color: #8fe53e;
 }
 
 .access iframe{
@@ -170,7 +226,6 @@ header img{
 footer{
     height: 60px;
     line-height: 60px;
-    background-color: aqua;
 }
 footer p{
     text-align: center;
