@@ -5,30 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HappyHack</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-    <link rel="icon" href="images/favicon.ico">
-    
-
-    <script src="js/main.js" async></script> -->
-
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <link href="css/slick-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/particle.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="style.css">
 
-    <!-- js -->
+    <link rel="icon" href="images/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
+    <script src="js/jquery.bgswitcher.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick.js"></script>
 
-    <!-- particle -->
-    
-    
-
+    <script src="script.js"></script>
 
     <!-- OGP -->
     <meta property="og:url" content="./index.html" />
@@ -37,12 +28,10 @@
     <meta property="og:description" content="Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。" />
     <meta property="og:site_name" content="Happy Hack" />
     <meta property="og:image" content="https://happy-hack.netlify.com/images/ogp.png" />
-    
-    
-
 </head>
 <body>
-    <header>
+    <header class="bg-switcher">
+      <div >
         <nav>
         <ul>
           <li><a href="#intro">Introduction</a></li>
@@ -52,9 +41,9 @@
         </ul>
         </nav>
 
-        <div class="bg-slider">
-            
-        </div>
+        <img src="images/logo.png" alt="">
+        <p>We are Web Designers.</p>    
+      </div>
     </header>
     <main>
     <section class="intro" id="intro">
@@ -97,7 +86,7 @@
     </section>
     <section class="courses" id="courses">
         <h2 class="courses-top title">Courses</h2>
-        <div class="courses-all">
+        <div class="courses-all" id="courses-all">
             <div class="course">
                 <img src="images/html.png" alt="">
                 <h3 class="course-title">
@@ -110,21 +99,21 @@
                 <h3 class="course-title">
                     CSSコース
                 </h3>
-                <a href="" class="course-btn course-html">このコースを受ける</a>
+                <a href="" class="course-btn course-css">このコースを受ける</a>
             </div>
             <div class="course">
                 <img src="images/unity.png" alt="">
                 <h3 class="course-title">
                     Unityコース
                 </h3>
-                <a href="" class="course-btn course-html">このコースを受ける</a>
+                <a href="" class="course-btn course-unity">このコースを受ける</a>
             </div>
             <div class="course">
                 <img src="images/ruby.png" alt="">
                 <h3 class="course-title">
                     Rubyコース
                 </h3>
-                <a href="" class="course-btn course-html">このコースを受ける</a>
+                <a href="" class="course-btn course-ruby">このコースを受ける</a>
             </div>
             <div class="course">
                 <img src="images/js.png" alt="">
@@ -132,7 +121,7 @@
                     JavaScriptコース
                 </h3>
                 <div>
-                <a href="" class="course-btn course-html">このコースを受ける</a>
+                <a href="" class="course-btn course-js">このコースを受ける</a>
                 </div>
             </div>
             <div class="course">
@@ -140,14 +129,14 @@
                 <h3 class="course-title">
                     Swiftコース
                 </h3>
-                <a href="" class="course-btn course-html">このコースを受ける</a>
+                <a href="" class="course-btn course-swift">このコースを受ける</a>
             </div>
             <div class="course">
                 <img src="images/go.png" alt="">
                 <h3 class="course-title">
                     Goコース
                 </h3>
-                <a href="" class="course-btn course-html">このコースを受ける</a>
+                <a href="" class="course-btn course-go">このコースを受ける</a>
             </div>
             
         </div>
@@ -155,13 +144,21 @@
     </section>
     <section class="images" id="images">
         <h2 class="images-top title">Images</h2>
-        <ul class="slide-items">
-            <li><img src="images/background1.jpg" alt=""></li>
-            <li><img src="images/background2.jpg" alt=""></li>
-            <li><img src="images/background3.jpg" alt=""></li>
-            <li><img src="images/background4.jpg" alt=""></li>
-            <li><img src="images/background5.jpg" alt=""></li>
-        </ul>
+
+        <div class="slider">
+            <div><img class="slider-img" src="images/background1.jpg" width="303"alt=""></div>
+            <div><img class="slider-img" src="images/background2.jpg"  width="303"alt=""></div>
+            <div><img class="slider-img" src="images/background3.jpg"  width="303"alt=""></div>
+            <div><img class="slider-img" src="images/background4.jpg"  width="303"alt=""></div>
+            <div><img class="slider-img" src="images/background5.jpg"  width="303"alt=""></div>
+        </div>
+        <div class="slider-res ">
+            <div><img class="slider-img" src="images/background1.jpg" width="100"alt=""></div>
+            <div><img class="slider-img" src="images/background2.jpg"  width="100"alt=""></div>
+            <div><img class="slider-img" src="images/background3.jpg"  width="100"alt=""></div>
+            <div><img class="slider-img" src="images/background4.jpg"  width="100"alt=""></div>
+            <div><img class="slider-img" src="images/background5.jpg"  width="100"alt=""></div>
+        </div>
 
     </section>
     <section class="access" id="access">
@@ -173,17 +170,5 @@
         <p>&copy; 2019 Happy Hack Inc.</p>
     </footer>
 
-    <script src="js/slick.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    
-    <script>
-        $(document).ready(function(){
-          $('.slider').bxSlider();
-          // mode: "fade",
-          // auto: "true",
-          // controls: "fase",
-        });
-      </script>
 </body>
 </html>

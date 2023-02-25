@@ -8,6 +8,24 @@ header{
     background-size: cover;
 }
 
+header{
+    position: relative;
+    text-align: center;
+    background: url('images/background1.jpg') center/cover;
+    width: 100vw;
+}
+
+header img{
+    margin: 32vh 0 4vh 0;
+    width: 945px;
+}
+
+header p{
+    color:#fff ;
+    font-family: 'Futura';
+    font-size: 45px;
+}
+
 nav{
     position: absolute;
     right: 60px;
@@ -46,10 +64,6 @@ header ul a:hover{
     background-size: cover;
 }
 
-header img{
-    width: 150px;
-}
-
 .title{
     text-align: center;
     font-family: Futura;
@@ -75,7 +89,9 @@ header img{
 
 .ex1-text{
     width: 400px;
-    line-height: 200%;
+    line-height: 32px;
+    font-size: 16px;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", sans-serif;
 }
 
 .ex1-btn{
@@ -116,7 +132,9 @@ header img{
 .ex2-text{
     width: 400px;
     margin: 15px;
-    line-height: 200%;
+    line-height: 32px;
+    font-size: 16px;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", sans-serif;
 }
 
 .ex2-btn{
@@ -149,7 +167,11 @@ header img{
 .courses{
     background-color: #D6E6F9;
     padding-bottom: 50px;
+    position:relative;
 }
+
+
+
 
 .courses-all{
     display: flex;
@@ -198,19 +220,46 @@ header img{
     background: #F16529;
 }
 
-
-
-
-.slide-items {
-    width: 40vw;
-
+.course-css{
+    background-color: #3EA9DF;
 }
 
-.slide-items img {
-    width: 100%;
-    object-fit: cover;
+.course-unity{
+    background-color: #000000;
 }
 
+.course-ruby{
+    background-color: #F25252;
+}
+
+.course-js{
+    background-color: #FAD700;
+}
+
+.course-swift{
+    background-color: #F47638;
+}
+
+.course-go{
+    background-color: #73CEDD;
+}
+
+.courses canvas{
+    position: absolute;
+    top: 20px;
+}
+
+.slider{
+    width: 80%;
+    margin: 0 auto;
+}
+.slider-res{
+    display: none;
+}
+.slider div img{
+    margin-left: 0;
+    margin-right: 0;
+}
 
 
 
