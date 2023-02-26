@@ -9,3 +9,18 @@ jQuery(function ($) {
         easing: "swing" // エフェクトのイージングをlinear,swingから指定
     });			
 });
+
+ふわっと出てくる //
+$(document).ready(function() {
+            $('section.section').css('visibility', 'hidden');
+            $(window).scroll(function() {
+                var windowHeight = $(window).height(),
+                    topWindow = $(window).scrollTop();
+                $('section.section').each(function() {
+                    var objectPosition = $(this).offset().top;
+                    if (topWindow > objectPosition - windowHeight + 200) {
+                        $(this).addClass("fuwatAnime");
+                    }
+                });
+            });
+        });

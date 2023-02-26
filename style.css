@@ -12,12 +12,13 @@ header{
     position: relative;
     text-align: center;
     background: url('images/background1.jpg') center/cover;
-    width: 100vw;
+    max-width: 100vw;
 }
 
 header img{
     margin: 32vh 0 4vh 0;
-    width: 945px;
+    max-width: 945px;
+    width: 100%;
 }
 
 header p{
@@ -83,12 +84,12 @@ header ul a:hover{
 }
 
 .ex1-img{
-    width: 500px;
+    max-width: 500px;
     margin: 20px;
 }
 
 .ex1-text{
-    width: 400px;
+    max-width: 400px;
     line-height: 32px;
     font-size: 16px;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", sans-serif;
@@ -100,7 +101,7 @@ header ul a:hover{
 }
 
 .ex1-btn a{
-    width: 170px;
+    max-width: 170px;
     padding: 10px 50px;
     text-decoration: none;
     color: white;
@@ -125,12 +126,12 @@ header ul a:hover{
 }
 
 .ex2-img{
-    width: 500px;
+    max-width: 500px;
     margin: 20px;
 }
 
 .ex2-text{
-    width: 400px;
+    max-width: 400px;
     margin: 15px;
     line-height: 32px;
     font-size: 16px;
@@ -143,7 +144,7 @@ header ul a:hover{
 }
 
 .ex2-btn a{
-    width: 170px;
+    max-width: 170px;
     padding: 10px 50px;
     text-decoration: none;
     color: white;
@@ -157,13 +158,6 @@ header ul a:hover{
     box-shadow: 0px 1px 9px 3px rgb(132, 128, 128);
 }
 
-
-
-
-
-
-
-
 .courses{
     background-color: #D6E6F9;
     padding-bottom: 50px;
@@ -175,7 +169,7 @@ header ul a:hover{
 
 .courses-all{
     display: flex;
-    width: 60%;
+    max-width: 60%;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -250,7 +244,7 @@ header ul a:hover{
 }
 
 .slider{
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -277,6 +271,7 @@ footer{
     height: 60px;
     line-height: 60px;
 }
+
 footer p{
     text-align: center;
     color: #3d5cdb;
@@ -284,17 +279,93 @@ footer p{
     font-size: 1rem;
 }
 
+
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
 @media all and(max-width: 480px) {
+
+    li a{
+        display: none;
+    }
     
     body{
         background-color: rgb(0, 0, 0);
     }
 
-    header img{
+    intro{
         width: 100vw;
     }
 
-    .access iframe{
-        width: 100px;
+    header img{
+        width: 50vw;
     }
+
+    header a{
+        display: none;
+    }
+
+    .title{
+        width: 20vw;
+    }
+
+    .ex1{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .ex2{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .access iframe{
+        width: 50px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
 }
