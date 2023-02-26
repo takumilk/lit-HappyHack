@@ -34,4 +34,27 @@ particlesJS("courses", {"particles":{"number":{"value":80,"density":{"enable":tr
       }
     });
     });
+
+    // スライダー //
+    if (window.matchMedia('screen and (max-width:320px)').matches) {
+      // スマホレイアウト
+      $(document).ready(function() {
+          $('.slider').slick({
+              dots: true,
+              slidesToShow: 1,
+          });
+      });
+      console.log('sp');
+  } else {
+      // PCレイアウト
+      console.log('pc');
+      $(document).ready(function() {
+          $('.slider').slick({
+              dots: true,
+              slidesToShow: 4,
+              slidesToScroll: 1
+          });
+      });
+  }
+
   });

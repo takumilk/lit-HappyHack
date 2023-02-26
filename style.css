@@ -1,5 +1,5 @@
 *{
-    margin: 0px;
+    /* margin: 0px; */
     padding: 0px;
 }
 
@@ -164,12 +164,9 @@ header ul a:hover{
     position:relative;
 }
 
-
-
-
 .courses-all{
     display: flex;
-    max-width: 60%;
+    width: 1060px;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -281,70 +278,58 @@ footer p{
 
 
 .fuwatAnime {
-    -webkit-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1.5s;
-    -ms-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -webkit-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:1.5s;
+    -ms-animation-duration:1.5s;
+    animation-duration:1.5s;
     -webkit-animation-name: fuwatAnime;
     -ms-animation-name: fuwatAnime;
     animation-name: fuwatAnime;
     visibility: visible !important;
 }
-
 @-webkit-keyframes fuwatAnime {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
+    0% { opacity: 0; -webkit-transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); }
 }
-
 @keyframes fuwatAnime {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-20px);
-        -ms-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
-    }
+    0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
 }
 
-@media all and(max-width: 480px) {
+@media all and (max-width: 480px) {
 
     li a{
         display: none;
     }
     
     body{
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
     }
 
-    intro{
+    .title{
+        font-size: 36px;
+    }
+    .intro{
         width: 100vw;
     }
 
     header img{
-        width: 50vw;
+        width: 90%;
     }
 
     header a{
         display: none;
     }
 
-    .title{
-        width: 20vw;
+    header p{
+        font-size: 20px;
+        margin-top: 150px;
+    }
+
+    h2{
+        font-size: 36px;
     }
 
     .ex1{
@@ -354,17 +339,69 @@ footer p{
         flex-direction: column;
     }
 
+    .ex1-box{
+        margin: 0;
+    }
+
+    .ex1 div,
+    .ex2 div{
+        margin: 0 auto;
+    }
+
+    .ex1-img,
+    .ex2-img
+    {
+        width: 300px;
+        margin: 0 auto 30px;
+    }
+
+    .ex2-img{
+        margin-top: 30px;
+    }
+
+    .ex1-text p,
+    .ex2-text p{
+        margin: 20px 30px;
+        line-height: 24px;
+        font-size: 13px;
+    }
+
     .ex2{
         display: flex;
         justify-content: center;
         width: 100vw;
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    
+    .ex2-btn{
+        margin: 10px auto;
+    }
+
+    .courses-all{
+        width: 100%;
+    }
+
+    .course{
+        width: 150px;
+        height: 250px;
+    }
+
+    .course-title{
+        bottom: 60px;
+        right: 35px;
+    }
+
+    .course-btn{
+        width: 120px;
+        right: 3px;
+        padding: 4px 8px;
+        bottom: 5px;
     }
 
     .access iframe{
-        width: 50px;
-        height: auto;
-        margin: 0 auto;
+        width: 300px;
+        height: 200px;
+        margin: 0 auto 50px;
     }
 
 
