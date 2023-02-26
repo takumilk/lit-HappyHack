@@ -85,6 +85,9 @@
 
     </section>
     <section class="courses fuwat" id="courses">
+        <div class="wrap">
+            <div id="particles-js"></div>
+        </div>
         <h2 class="courses-top title">Courses</h2>
         <div class="courses-all" id="courses-all">
             <div class="course">
@@ -176,6 +179,21 @@
            });
           });
         });
+
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        auto: true,//自動切り替えの有無
+        speed:1000,//動くスピード※デフォルトは500
+        minSlides: 4,//一度に表示させる画像の最小値
+        maxSlides: 4,//一度に表示させる画像の数
+        slideMargin: 10,
+        pager: true,
+        prevText: '＜',
+        nextText: '＞',
+        arrows: true,           //左右の矢印
+	    infinite: true,         //スライドのループ
+      });
+    });
     </script>
 
 </body>
