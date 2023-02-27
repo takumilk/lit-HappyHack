@@ -252,14 +252,9 @@ header ul a:hover{
     margin: 0 auto;
 }
 
-.slider div img{
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.slider-img{
-    margin: 0;
-    padding: 0;
+.bx-wrapper{
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .access{
@@ -394,8 +389,8 @@ footer p{
     }
 
     .course-title{
-        bottom: 60px;
-        right: 35px;
+        bottom: -66px;
+        right: 3px;
     }
 
     .course-btn{

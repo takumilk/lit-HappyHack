@@ -15,9 +15,11 @@
     <script src="js/jquery.bgswitcher.js"></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-    <script src="js/particle.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/slick.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
 
     <script src="script.js"></script>
 
@@ -28,6 +30,8 @@
     <meta property="og:description" content="Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。" />
     <meta property="og:site_name" content="Happy Hack" />
     <meta property="og:image" content="https://happy-hack.netlify.com/images/ogp.png" />
+
+
 </head>
 <body>
     <header class="bg-switcher">
@@ -180,6 +184,33 @@
           });
         });
 
+    // $('.slider').bxSlider({
+    //     pause:6000,//停止時間※デフォルトは4000
+    //     speed:1000,//動くスピード※デフォルトは500
+    //     minSlides: 3,//一度に表示させる画像の最小値
+    //     maxSlides: 4,//一度に表示させる画像の数
+    //     slideWidth: 1000,
+    //     auto: false,
+	// });
+    
+            $('.slider').slick({
+                autoplay: false,
+                arrows: true,
+                dots: true,
+                autoplay: false,
+                slidesToShow: 4, //表示するスライドの数
+                slidesToScroll: 1, //スクロールで切り替わるスライドの数
+                responsive: [{
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: true,
+                        dots: true,
+                    }
+                }]
+            });
+    
     $(document).ready(function(){
       $('.slider').bxSlider({
         auto: true,//自動切り替えの有無
@@ -194,6 +225,13 @@
 	    infinite: true,         //スライドのループ
       });
     });
+    
+
+    
+
+    particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+
+    
     </script>
 
 </body>
