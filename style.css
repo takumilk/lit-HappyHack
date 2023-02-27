@@ -412,7 +412,7 @@ footer p{
 
     .course{
         width: 150px;
-        height: 250px;
+        height: 240px;
     }
 
     .course-title{
@@ -425,6 +425,7 @@ footer p{
         right: 3px;
         padding: 4px 8px;
         bottom: 5px;
+        border-radius: 5px;
     }
 
     .access{
