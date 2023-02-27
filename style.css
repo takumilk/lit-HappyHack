@@ -53,7 +53,6 @@ header ul a{
 
 header ul a:hover{
     color: #3d5cdb;
-
 }
 
 .head-title{
@@ -292,18 +291,26 @@ footer p{
     right: 10px;
 }
 
-.slider .slick-prev,
+.slider .slick-prev{
+
+}
+
 .slider .slick-next
 {
     /* スライド画像の後ろに隠れないようにする */
+    right: 10;
     z-index: 100;
 }
 
 .slider .slick-prev::before,
 .slider .slick-next::before {
     /* フォントと色の設定はbefore内で行う */
-    /* font-size: 28px; */
-    /* color: black; */
+    font-size: 28px; 
+    color: black;
+}
+
+.images{
+    /* background-color: black; */
 }
 
 
